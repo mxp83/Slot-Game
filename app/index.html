@@ -13,7 +13,8 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-sm-12 text-xs-center">
+				<img class="header img-fluid" src="images/english-text-01.png" alt="">
 				<h1 class="text-xs-center">Spin to Win</h1>
 				<p class="text-xs-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque beatae consequatur expedita repellat laborum placeat nihil accusantium harum commodi aperiam voluptates magnam itaque, vitae nisi quam. Minus quas sapiente hic.</p>
 			</div>
@@ -26,9 +27,11 @@
 				<script>
 					$(function(){
 						var numbers = ['1','2','3'];
+						var images = ['<img src="images/cock-01.png">','<img src="images/tree-01.png">','<img src="images/coin-01.png">'];
 
 						var ezslot1 = new EZSlots('ezslots1',{
 							'reelCount' : 3,
+							'symbols' : images,
 							'startingSet' : [0,1,2],
 							'winningSet' : [2,2,2],
 							'height' : 126,
@@ -51,6 +54,12 @@
 			<div class="col-sm-12 text-xs-center prize-section">
 				<h1>YOU WIN!</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, sit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-xs-center prize-section">
+				<h5>Don't forget to come in to River Rock Casino and drop off your ballots for a chance to win your share of</h5>
+				<img src="images/english-text-02.png" alt="" class="img-fluid prize-pool">
 			</div>
 		</div>
 		<div class="row">
