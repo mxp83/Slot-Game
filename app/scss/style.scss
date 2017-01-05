@@ -1,0 +1,37 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-flex.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+html {
+	height: 100%;
+}
+body {
+	background: #ff0000;
+	background: -moz-linear-gradient(top,  #ff0000 0%, #750001 100%);
+	background: -webkit-linear-gradient(top,  #ff0000 0%,#750001 100%);
+	background: linear-gradient(to bottom,  #ff0000 0%,#750001 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#750001',GradientType=0 );
+}
+
+.container {
+	background: #fff;
+}
+.ezslots>.window{	
+	overflow:hidden;
+	display:inline-block;
+	border:1px solid #000;
+}
+.ezslots>.window>.slider>.symbol{
+	text-align:center;
+	display:table;	
+}
+.ezslots>.window>.slider>.symbol>.content{
+      padding:0px;
+      margin:0px;
+      display:table-cell;
+      text-align:center;
+      vertical-align:middle;
+}
+.prize-section {
+	display: none;
+}

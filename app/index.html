@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Slot Game</title>
+	<link rel="stylesheet" href="css/app.css">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1 class="text-xs-center">Spin to Win</h1>
+				<p class="text-xs-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque beatae consequatur expedita repellat laborum placeat nihil accusantium harum commodi aperiam voluptates magnam itaque, vitae nisi quam. Minus quas sapiente hic.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 slot-machine text-xs-center">
+				<div id="ezslots1"></div>
+				<button id="spinner">Play</button>
+
+				<script>
+					$(function(){
+						var numbers = ['1','2','3'];
+
+						var ezslot1 = new EZSlots('ezslots1',{
+							'reelCount' : 3,
+							'startingSet' : [0,1,2],
+							'winningSet' : [2,2,2],
+							'height' : 126,
+							'width' : 126
+						});
+
+						$('#spinner').click(function(){
+							console.log(ezslot1.win());
+							window.setTimeout(prizing,7500);
+						});
+					});
+					function prizing() {
+						$('.prize-section').fadeIn();
+						$('#spinner').hide();
+					}
+				</script>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-xs-center prize-section">
+				<h1>YOU WIN!</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, sit.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-xs-center">
+				<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit officiis nisi, itaque praesentium consectetur at iure odit eum in. Impedit.</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
