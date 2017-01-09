@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Slot Game</title>
+	<title>Chinese New Year Slot Game</title>
 	<link rel="stylesheet" href="css/app.css">
 
 
@@ -21,8 +21,26 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-12 slot-machine text-xs-center">
-				<div id="ezslots1"></div>
-				<button id="spinner">Play</button>
+				<div class="halfcircle"></div>
+				<div class="slotmachine">
+					<div class="slot-title">
+						<h1>SLOTS</h1>
+					</div>
+					<div id="ezslots1"></div>
+					<div class="play-area">
+						<button id="spinner" class="red">SPIN</button>
+					</div>					
+				</div>
+				<div class="bottom-slot">
+					<div class="dispenser">
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-xs-center">
 
 				<script>
 					$(function(){
@@ -45,7 +63,9 @@
 					});
 					function prizing() {
 						$('.prize-section').fadeIn();
-						$('#spinner').hide();
+						$('#spinner').prop('disabled',true);
+						$('#spinner').removeClass('red');
+						$('#spinner').addClass('disabled');
 					}
 				</script>
 			</div>
